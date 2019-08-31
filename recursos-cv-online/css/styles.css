@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box; /*logro que todas las longitudes de cada elemento queden contenidas en la caja y no que cambien con su contenido*/
+}
+
+body{
+    scroll-padding-top: 65px; /*puedo ver los enlaces de destino dentro del contenido cuando selecciono un enlace del menú, sino el menú fixed se superpone*/
+    background-color: dimgray; /*le doy continuidad al color para que no se noten las diferencias de altura entre las dos columnas al cambiar el tamaña de la pantalla*/
+}
+
+
+.clearfix::after { /*limpio los float para que no siga intentando flotar los elementos que no quiero flotar*/
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#contenedorGral {
+    margin-top: 46px; /*Le doy un margen para que el menú fijo en el top no se superponga con el contenido principal*/
+}
+
+#header {
+    position: fixed; /*dejo el encabezado y el menú fijos en la parte superior de la página*/
+    top: 0;
+    background-color: rgb(186, 145, 240);
+    width: 100%;
+}
+
+#menu a:hover { /*resalto de manera básica el enlace que voy a hacer click, indicando al usuario que ese elemento tiene asociada una accion o respuesta al click*/
+    background: violet;
+    color: white;
+  }
+
+#menu {
+    height: 30px;
+    margin: 0 auto; /* Centro el contenedor */
+    width: 100%;
+    position: relative; /*hago el elemento padre del menú relativo para poder hacer cada hijo (enlace) absoluto en su posición*/
+}
+
+#menu ul li { /* aplico las reglas comunes a los enlaces en una regla y luego marco las diferencias para cada enlace con su id, así no repito definiciones de atributos*/
+    list-style:none;
+    position: absolute;
+    top: 0;
+}
+
+#menu ul #pre { /*distribuyo los porcentajes para lograr un distribución homogenea de los enlaces en el menú*/
+    left: 10%;
+}
+#menu ul #for {
+    left: 35%;
+}
+#menu ul #exp {
+    left: 60%;
+}
+#menu ul #por {
+    left: 85%;
+}
+
+#menu ul li .link {
+    text-decoration: none; /*elimino el subrayado de los enlaces*/
+}
+
+#img-gina {
+    width: 27%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 50px;
+    margin-left: 10px; /*prefiero dejarla cerca del margen inquierdo, porque al llevar la pantalla al tamaño de un móvil, la imagen queda mejor centrada.(First mobile)*/
+    position: fixed; /*también dejo fija la foto como referencia de lo que se va a leer en el contenido de la otra columna*/
+    top: 70px;
+}
+
+.columna {
+    float: left;
+}
+
+.der {
+    width: 70%;
+    padding-left: 10px; /*le doy distancia al texto de toda la columna*/
+    background-color: dimgray;
+    height: 100%; /*el tamaño se ajusta al contenido y al tamaño de la pantalla*/
+}
+
+.izq {
+    width: 30%;
+    background-color: violet;
+    height: 3500px; /*esta altura de columna me permite en la pantalla de un móvil dar continuidad a ambas columnas siguiendo el cambio de posición de los elementos*/
+}
+
+.iconos {
+    width: 200px; /*les doy un tamaño proporcional para que queden en dos filas de 4 iconos*/
+    height: 200px;
+}
+
+#porfolio ul li {
+    list-style:none;
+    float: left;
+}
+
+hr.principal {
+    border-top: 3px solid violet;
+}
+
+#quienSoy ul li {
+    list-style:none;
+}
+

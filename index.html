@@ -9,85 +9,91 @@
     <link rel="stylesheet" href="../Acamica-Proyecto01-CV/recursos-cv-online/css/styles.css" >
 </head>
 <body>
-    <div class="contenedorGral">
-        <div class="header">
+    <div id="contenedorGral">
+        <div class="clearfix" id="header">
             <nav id="menu">
                 <ul id="listaMenu">
-                    <li>Presentación</li>
-                    <li>Formación</li>
-                    <li>Experiencia</li>
-                    <li>Porfolio</li>
+                    <li id="pre"><a class="link" href="#quienSoy">Presentación</a></li>
+                    <li id="for"><a class="link" href="#formacion">Formación</a></li>
+                    <li id="exp"><a class="link" href="#experiencia">Experiencia</a></li>
+                    <li id="por"><a class="link" href="#porfolio">Porfolio</a></li>
                 </ul>
             </nav>  
         </div>
         
-        <div class="main">
-            <div id="img-gina">
-                <img src="recursos-cv-online/imgs/IMG_20190817_133911652_HDR.jpg">
+        <div class="main clearfix">
+            <div class="columna izq">
+                <div id="imagen-gina">
+                    <img src="recursos-cv-online/imgs/IMG_20190817_133911652_HDR.jpg" alt="Smiley face" id="img-gina">
+                </div>
             </div>
-            <div class="seccion" id="quienSoy">
-                <h2>Quien soy... </h2>
-                <hr class="principal">
-                <h1>GINA ABRIL FERRER</h1>
-                <h3>Front-End jr.</h2>
-                <ul>
-                    <li>EMAIL: GINAABRILFERRER@GMAIL:COM</li>
-                    <hr>
-                    <li>TELEFONO: +54 115 251 2245</li>
-                    <hr>
-                    <li>LINKEDIN: GINAABRILFERRER</li>
-                    <hr>
-                    <li>SKYPE: gina.ferrer</li>
-                    <hr>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error obcaecati sequi 
-                    quidem beatae, sapiente ex ipsa ab, sit, dolores hic soluta velit itaque rem 
-                    dolor optio? Quia harum dicta repellat?
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste ex debitis 
-                    accusantium tenetur velit asperiores officiis veniam quis exercitationem autem 
-                    nesciunt, minus eveniet eius dolor, neque enim? Consequuntur, sapiente.
-                </p>
-            </div>
-            <div class="seccion" id="formacion">
-                <h2>Formación</h2>
-                <hr class="principal">
-                <h4>Bachiller Instituto San Buenaventura</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
-                    nihil doloribus nesciunt dolore vel at laudantium veritatis dicta autem ducimus
-                     magni? Doloremque repellendus quo ducimus aut quas?
-                </p>
-                <h4>Curso HTML5 - Acámica</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet veritatis vitae 
-                    reprehenderit debitis saepe, nemo incidunt consectetur fugit, accusantium harum
-                     tenetur enim optio repellendus quod quia molestias nostrum rem nulla!
-                </p>
+            <div class="columna der">
+                <div class="seccion" id="quienSoy">
+                    <h2>Quien soy... </h2>
+                    <hr class="principal">
+                    <h1>GINA ABRIL FERRER</h1>
+                    <h3>Front-End jr.</h2>
+                    <ul>
+                        <li >EMAIL: GINAABRILFERRER@GMAIL.COM</li>
+                        <hr>
+                        <li>TELEFONO: +54 115 251 2245</li>
+                        <hr>
+                        <li>LINKEDIN: GINAABRILFERRER</li>
+                        <hr>
+                        <li>SKYPE: gina.ferrer</li>
+                        <hr>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error obcaecati sequi 
+                        quidem beatae, sapiente ex ipsa ab, sit, dolores hic soluta velit itaque rem 
+                        dolor optio? Quia harum dicta repellat?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste ex debitis 
+                        accusantium tenetur velit asperiores officiis veniam quis exercitationem autem 
+                        nesciunt, minus eveniet eius dolor, neque enim? Consequuntur, sapiente.
+                    </p>
+                </div>
+                <div class="seccion" id="formacion">
+                    <h2>Formación</h2>
+                    <hr class="principal">
+                    <h4>Bachiller Instituto San Buenaventura</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
+                        nihil doloribus nesciunt dolore vel at laudantium veritatis dicta autem ducimus
+                        magni? Doloremque repellendus quo ducimus aut quas?
+                    </p>
+                    <h4>Curso HTML5 - Acámica</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet veritatis vitae 
+                        reprehenderit debitis saepe, nemo incidunt consectetur fugit, accusantium harum
+                        tenetur enim optio repellendus quod quia molestias nostrum rem nulla!
+                    </p>
+                </div>
+                <div class="seccion" id="experiencia">
+                    <h2>Experiencia</h2>
+                    <hr class="principal">
+                    <h4>Bachiller Instituto San Buenaventura</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
+                        nihil doloribus nesciunt dolore vel at laudantium veritatis dicta autem ducimus
+                        magni? Doloremque repellendus quo ducimus aut quas?
+                    </p>
+                </div>
+                <div class="seccion" >
+                    <h2>Porfolio</h2>
+                    <hr class="principal">
+                    <div id="porfolio">
+                        <ul>                        
+                            <li><a href="#"><img src="recursos-cv-online/imgs/cv-icon.png" class="iconos" id="img-cv"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/ciudad-zombie-icon.png" class="iconos" id="img-zo"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/encuestados-icon.png" class="iconos" id="img-en"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/mapa-interactivo-icon.png" class="iconos" id="img-mp"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/peli-vs-peli-icon.png" class="iconos" id="img-pe"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/pixel-art-icon.png" class="iconos" id="img-pi"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/que-veo-icon.png" class="iconos" id="img-qe"></a></li>
+                            <li><a href="#"><img src="recursos-cv-online/imgs/rompecabezas-icon.png" class="iconos" id="img-ro"></a></li>
+                        </ul>  
 
+                    </div>
+                  
+                </div>
             </div>
-            <div class="seccion" id="experencia">
-                <h2>Experiencia</h2>
-                <hr class="principal">
-                <h4>Bachiller Instituto San Buenaventura</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
-                    nihil doloribus nesciunt dolore vel at laudantium veritatis dicta autem ducimus
-                     magni? Doloremque repellendus quo ducimus aut quas?
-                </p>
-            </div>
-            <div class="seccion" id="porfolio">
-                <h2>Porfolio</h2>
-                <hr class="principal">
-                <img src="recursos-cv-online/imgs/cv-icon.png" class="iconos" id="img-cv">
-                <img src="recursos-cv-online/imgs/ciudad-zombie-icon.png" class="iconos" id="img-zo">
-                <img src="recursos-cv-online/imgs/encuestados-icon.png" class="iconos" id="img-en">
-                <img src="recursos-cv-online/imgs/mapa-interactivo-icon.png" class="iconos" id="img-mp">
-                <img src="recursos-cv-online/imgs/peli-vs-peli-icon.png" class="iconos" id="img-pe">
-                <img src="recursos-cv-online/imgs/pixel-art-icon.png" class="iconos" id="img-pi">
-                <img src="recursos-cv-online/imgs/que-veo-icon.png" class="iconos" id="img-qe">
-                <img src="recursos-cv-online/imgs/rompecabezas-icon.png" class="iconos" id="img-ro">
-            </div>
-        </div>
-        <div class="footer">
-            <h3>Pie</h3>
         </div>
     </div>
 </body>
