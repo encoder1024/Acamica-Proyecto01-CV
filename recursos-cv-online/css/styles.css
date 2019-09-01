@@ -4,7 +4,7 @@
 
 body{
     scroll-padding-top: 65px; /*puedo ver los enlaces de destino dentro del contenido cuando selecciono un enlace del menú, sino el menú fixed se superpone*/
-    background-color: rgb(128, 128, 128); /*le doy continuidad al color para que no se noten las diferencias de altura entre las dos columnas al cambiar el tamaña de la pantalla*/
+    background-color: lightgreen; /*le doy continuidad al color para que no se noten las diferencias de altura entre las dos columnas al cambiar el tamaña de la pantalla*/
 }
 
 
@@ -25,10 +25,10 @@ body{
     width: 100%;
 }
 
-#menu a:hover { /*resalto de manera básica el enlace que voy a hacer click, indicando al usuario que ese elemento tiene asociada una accion o respuesta al click*/
+.resaltar a:hover { /*resalto de manera básica el enlace que voy a hacer click, indicando al usuario que ese elemento tiene asociada una accion o respuesta al click*/
     background: lightgreen;
     color: white;
-  }
+}
 
 #menu {
     height: 30px;
@@ -68,10 +68,10 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-left: 10px; /*prefiero dejarla cerca del margen inquierdo, porque al llevar la pantalla al tamaño de un móvil, la imagen queda mejor centrada.(First mobile)*/
     position: fixed; /*también dejo fija la foto como referencia de lo que se va a leer en el contenido de la otra columna*/
-    top: 70px;
+    top: 65px;
 }
 
 .columna {
@@ -82,7 +82,7 @@ body{
     width: 70%;
     padding-left: 10px; /*le doy distancia al texto de toda la columna*/
     padding-right: 10px;
-    background-color: rgb(128, 128, 128);
+    background-color: lightgreen;
     height: 100%; /*el tamaño se ajusta al contenido y al tamaño de la pantalla*/
 }
 
@@ -115,6 +115,18 @@ hr.principal {
 
 .seccion {
     font-family: 'Open+Sans', 'Roboto', 'Lato';
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+    margin: 20px 0 20px 0;
+    background-color: rgb(128, 128, 128);
+}
+
+.seccion .link {
+    text-decoration: none; /*elimino el subrayado de los enlaces*/
     color: white;
 }
 
