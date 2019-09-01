@@ -4,7 +4,7 @@
 
 body{
     scroll-padding-top: 65px; /*puedo ver los enlaces de destino dentro del contenido cuando selecciono un enlace del menú, sino el menú fixed se superpone*/
-    background-color: dimgray; /*le doy continuidad al color para que no se noten las diferencias de altura entre las dos columnas al cambiar el tamaña de la pantalla*/
+    background-color: rgb(128, 128, 128); /*le doy continuidad al color para que no se noten las diferencias de altura entre las dos columnas al cambiar el tamaña de la pantalla*/
 }
 
 
@@ -21,12 +21,12 @@ body{
 #header {
     position: fixed; /*dejo el encabezado y el menú fijos en la parte superior de la página*/
     top: 0;
-    background-color: rgb(186, 145, 240);
+    background-color: limegreen;
     width: 100%;
 }
 
 #menu a:hover { /*resalto de manera básica el enlace que voy a hacer click, indicando al usuario que ese elemento tiene asociada una accion o respuesta al click*/
-    background: violet;
+    background: lightgreen;
     color: white;
   }
 
@@ -41,6 +41,8 @@ body{
     list-style:none;
     position: absolute;
     top: 0;
+    font-family: 'Open+Sans', 'Roboto', 'Lato';
+    text-transform: uppercase;
 }
 
 #menu ul #pre { /*distribuyo los porcentajes para lograr un distribución homogenea de los enlaces en el menú*/
@@ -58,6 +60,7 @@ body{
 
 #menu ul li .link {
     text-decoration: none; /*elimino el subrayado de los enlaces*/
+    color: white;
 }
 
 #img-gina {
@@ -78,13 +81,14 @@ body{
 .der {
     width: 70%;
     padding-left: 10px; /*le doy distancia al texto de toda la columna*/
-    background-color: dimgray;
+    padding-right: 10px;
+    background-color: rgb(128, 128, 128);
     height: 100%; /*el tamaño se ajusta al contenido y al tamaño de la pantalla*/
 }
 
 .izq {
     width: 30%;
-    background-color: violet;
+    background-color: lightgreen;
     height: 3500px; /*esta altura de columna me permite en la pantalla de un móvil dar continuidad a ambas columnas siguiendo el cambio de posición de los elementos*/
 }
 
@@ -99,10 +103,30 @@ body{
 }
 
 hr.principal {
-    border-top: 3px solid violet;
+    border-top: 3px solid lightgreen;
 }
 
 #quienSoy ul li {
     list-style:none;
+    text-transform: uppercase;
 }
+
+/*Estilos para los textos de los distintos elementos*/
+
+.seccion {
+    font-family: 'Open+Sans', 'Roboto', 'Lato';
+    color: white;
+}
+
+#nombreCv {
+    text-align: center;
+}
+
+h2.titulo {
+    color: lightgreen;
+}
+
+
+
+
 

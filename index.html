@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!--Las family fonts deben pedirse antes de los archivos css que utilizan estos recursos, ojo con los tiempos de descarga-->
+    <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400|Lato:300,400"> 
     <link rel="stylesheet" href="../Acamica-Proyecto01-CV/recursos-cv-online/css/normalize.css" >
     <link rel="stylesheet" href="../Acamica-Proyecto01-CV/recursos-cv-online/css/styles.css" >
 </head>
@@ -29,10 +32,12 @@
             </div>
             <div class="columna der">
                 <div class="seccion" id="quienSoy">
-                    <h2>Quien soy... </h2>
+                    <h2 class="titulo">Quien soy... </h2>
                     <hr class="principal">
-                    <h1>GINA ABRIL FERRER</h1>
-                    <h3>Front-End jr.</h2>
+                    <div id="nombreCv">
+                        <h1 >GINA ABRIL FERRER</h1>                    
+                        <h3>Contadora Pública very Junior</h2>
+                    </div>
                     <ul>
                         <li >EMAIL: GINAABRILFERRER@GMAIL.COM</li>
                         <hr>
@@ -53,7 +58,7 @@
                     </p>
                 </div>
                 <div class="seccion" id="formacion">
-                    <h2>Formación</h2>
+                    <h2 class="titulo">Formación</h2>
                     <hr class="principal">
                     <h4>Bachiller Instituto San Buenaventura</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
@@ -67,7 +72,7 @@
                     </p>
                 </div>
                 <div class="seccion" id="experiencia">
-                    <h2>Experiencia</h2>
+                    <h2 class="titulo">Experiencia</h2>
                     <hr class="principal">
                     <h4>Bachiller Instituto San Buenaventura</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab quis pariatur 
@@ -76,7 +81,7 @@
                     </p>
                 </div>
                 <div class="seccion" >
-                    <h2>Porfolio</h2>
+                    <h2 class="titulo">Porfolio</h2>
                     <hr class="principal">
                     <div id="porfolio">
                         <ul>                        
